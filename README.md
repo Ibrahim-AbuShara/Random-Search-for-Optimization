@@ -41,7 +41,7 @@
 	<p>Run the Python script</p>
 	<pre><code>python tsp_simulated_annealing_algorithm.py</code></pre>
 	<h1>The output:</h1>
-	<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGE5MmI1MmM0MTYxZGM1YzZkZDM0NWUxNzNiM2NjNjVhMmJlMjViMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/bQA3ya92PfDQGLTHFg/giphy.gif" alt="My Animation">
+	<img src="[https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGE5MmI1MmM0MTYxZGM1YzZkZDM0NWUxNzNiM2NjNjVhMmJlMjViMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/bQA3ya92PfDQGLTHFg/giphy.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2QwMmY5NjE1MGI2YzE4NjE5YjEwYmUyNGUwYmEyODkxOTBiZWFkMiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/PRL1qSnfXAbNh0OrcT/giphy.gif)" alt="My Animation">
 	
 </body>
 </html>
