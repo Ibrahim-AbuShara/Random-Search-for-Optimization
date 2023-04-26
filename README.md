@@ -41,7 +41,7 @@
 	<p>Run the Python script</p>
 	<pre><code>python tsp_simulated_annealing_algorithm.py</code></pre>
 	<h1>The output:</h1>
-	<img src="[myimage.jpg](https://user-images.githubusercontent.com/72117355/234706889-a824f055-76a0-4b72-a511-760caae55180.gif)" alt="My Image">
+	<img src="[https://example.com/myanimation.gif](https://user-images.githubusercontent.com/72117355/234706889-a824f055-76a0-4b72-a511-760caae55180.gif)" alt="My Animation">
 	
 </body>
 </html>
