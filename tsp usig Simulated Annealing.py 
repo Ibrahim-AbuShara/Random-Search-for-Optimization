@@ -1,0 +1,66 @@
+import numpy as np
+import pandas as pd
+import math
+import random
+import matplotlib.pyplot as plt
+import os
+# define distance function
+def dist(city1, city2):
+    x1, y1 = city1[0], city1[1]
+    x2, y2 = city2[0], city2[1]
+    return math.sqrt((x1-x2)**2 + (y1-y2)**2)
+
+# load data
+data = pd.read_excel("15-Points.xlsx")
+cities = data[['x', 'y']].values.tolist()
+
+# define objective function
+def total_distance(solution):
+    distance = 0
+    for i in range(len(solution)-1):
+        distance += dist(cities[solution[i]], cities[solution[i+1]])
+    distance += dist(cities[solution[-1]], cities[solution[0]])
+    return distance
+
+def plot_map(nodes_list):
+    for i in range(len(nodes_list)):
+        nodes_list.append(nodes_list[-1])
+        plt.plot(data.values[nodes_list][:,0],data.values[nodes_list][:,1],'*',color='green')
+        df=np.array(data.values[nodes_list[:i+1]])
+        ax=plt.plot(df[:,0],df[:,1],lw=5,color="blue")
+        plt.plot(data.values[nodes_list[i]][0],data.values[nodes_list[i]][1],'o',lw=10,color="red")
+        plt.xlim(-90,30)
+        plt.ylim(-50,30)
+        plt.title(f"Traveling Salesman Problem Simulated Annealing\nCity:{int(data.values[nodes_list[i]][-1])}")
+        plt.savefig(f"/home/ibrahim/projects/Random-Search-for-Optimization/SA_imgs/{i:003}",dpi=100,facecolor="white")
+        plt.close()
+    os.system("convert -delay 50 /home/ibrahim/projects/Random-Search-for-Optimization/SA_imgs/*.png tsp_SA.gif")
+    os.system("gifview -a tsp_SA.gif")
+        
+
+# generate initial solution
+solution = list(range(len(cities)))
+random.shuffle(solution)
+
+# set initial temperature and cooling rate
+temperature = 100000
+cooling_rate = 0.003
+
+# perform simulated annealing
+while temperature > 1:
+    # generate perturbation
+    i, j = sorted(random.sample(range(len(cities)), 2))
+    new_solution = solution[:i] + solution[j:j+1] + solution[i+1:j] + solution[i:i+1] + solution[j+1:]
+    # calculate energy difference
+    energy_diff = total_distance(new_solution) - total_distance(solution)
+    
+    # accept or reject perturbation
+    if energy_diff < 0 or math.exp(-energy_diff / temperature) > random.random():
+        solution = new_solution
+    temperature *= 1 - cooling_rate
+
+# print best solution found
+solution.append(solution[0])
+print(solution)
+print(total_distance(solution))
+plot_map(solution)

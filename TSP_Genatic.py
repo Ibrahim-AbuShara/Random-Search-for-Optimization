@@ -117,13 +117,13 @@ def seletion_and_crossover(prob, pob, n):
     candidates_num = 10
     new_pob = []
     while len(new_pob) < n:
-        # # random wheel selection
-        # parent1 = random_selection(pob)
-        # parent2 = random_selection(pob)
+        # random  selection
+        parent1 = random_selection(pob)
+        parent2 = random_selection(pob)
         
-        # tournment selection
-        parent1 = tournment_selection(pob, candidates_num)
-        parent2 = tournment_selection(pob, candidates_num)
+        # # tournment selection
+        # parent1 = tournment_selection(pob, candidates_num)
+        # parent2 = tournment_selection(pob, candidates_num)
         
         # # roulette wheel selection
         # parent1 = roulette_wheel_selection(pob)
@@ -179,7 +179,7 @@ def plot_map(data, chromosome):
 df = pd.read_excel("15-Points.xlsx")
 city_obj = [City(num,x,y) for num,x,y in zip(df['City'], df['x'], df['y'])]
 n = len(city_obj)
-pob_size = 200
+pob_size = 100
 itr_num=100
 elite_ratio =0.05
 crossover_ratio =.8

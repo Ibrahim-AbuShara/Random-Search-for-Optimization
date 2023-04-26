@@ -27,8 +27,11 @@ def linear_cost(position):
     cost = (np.linalg.norm(error_vector) ** 2) / (len(target_label)*2)
     return cost
 #problem Defineiton 
-features = np.linspace(-5,5,1000).reshape(-1,1)
-target_label = -2 * features + 3 + np.random.rand(*features.shape)
+np.random.seed(1)
+
+
+features =np.random.rand(50, 1)
+target_label = 2 + 3 * features + np.random.rand(50, 1)
 #y_pred = particle.pos[0] + x * particle.pos[1]
 cost = lambda x : (x[0] - 2) ** 2 + (x[1] - 4)**2
 
