@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Random-Search-for-Optimization</title>
+
 </head>
 <body>
 	<h1>Random-Search-for-Optimization</h1>
