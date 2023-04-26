@@ -41,6 +41,6 @@
 	<p>Run the Python script</p>
 	<pre><code>python tsp_simulated_annealing_algorithm.py</code></pre>
 	<p>The program will output an animated GIF file called tsp_simulated_annealing.gif and an image file called tsp_simulated_annealing.png showing the optimization process.</p>
-	<img src="tsp_simulated_annealing.gif">
+	<img src="[tsp_simulated_annealing.gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGE5MmI1MmM0MTYxZGM1YzZkZDM0NWUxNzNiM2NjNjVhMmJlMjViMSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/bQA3ya92PfDQGLTHFg/giphy.gif)">
 </body>
 </html>
