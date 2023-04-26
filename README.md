@@ -40,7 +40,8 @@
 	<pre><code>cd Random-Search-for-Optimization</code></pre>
 	<p>Run the Python script</p>
 	<pre><code>python tsp_simulated_annealing_algorithm.py</code></pre>
-	<p>The program will output an animated GIF file called tsp_simulated_annealing.gif and an image file called tsp_simulated_annealing.png showing the optimization process.</p>
-	<img src="[tsp_simulated_annealing.gif](https://github.com/Ibrahim-AbuShara/Random-Search-for-Optimization/blob/main/ezgif-3-b9fd633be7.gif)">
+	<h1>The output:</h1>
+	
 </body>
 </html>
+![Alt Text]([https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif](https://github.com/Ibrahim-AbuShara/Random-Search-for-Optimization/blob/main/ezgif-3-b9fd633be7.gif))
