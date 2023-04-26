@@ -41,8 +41,9 @@
 	<p>Run the Python script</p>
 	<pre><code>python tsp_simulated_annealing_algorithm.py</code></pre>
 	<h1>The output:</h1>
+	![ezgif-3-b9fd633be7](https://user-images.githubusercontent.com/72117355/234706889-a824f055-76a0-4b72-a511-760caae55180.gif)
 	
 </body>
 </html>
-![ezgif-3-b9fd633be7](https://user-images.githubusercontent.com/72117355/234706889-a824f055-76a0-4b72-a511-760caae55180.gif)
+
 
